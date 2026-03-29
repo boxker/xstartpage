@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>xwww.cc - 互联网从这里开始</title>
+    <meta
+      name="description"
+      content="xwww.cc 极简现代起始页，支持 ChatGPT、Bing、Google、Perplexity 一键搜索。"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="brand" aria-label="xwww.cc logo">
+        <span class="brand-x">x</span>
+        <span class="brand-www">www</span>
+      </header>
+      <p class="subtitle">互联网从这里开始 · xwww.cc</p>
+
+      <section class="search-card" aria-label="搜索区域">
+        <label class="engine-picker">
+          <span class="sr-only">选择搜索引擎</span>
+          <select id="engineSelect">
+            <option value="chatgpt">ChatGPT</option>
+            <option value="bing">Bing</option>
+            <option value="google">Google</option>
+            <option value="perplexity">Perplexity</option>
+          </select>
+        </label>
+
+        <form id="searchForm" class="search-form">
+          <label for="keywordInput" class="sr-only">输入关键词</label>
+          <textarea
+            id="keywordInput"
+            name="keyword"
+            rows="3"
+            placeholder="输入关键词（Shift + Enter 换行，Enter 搜索）"
+          ></textarea>
+          <button type="submit">搜索</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
